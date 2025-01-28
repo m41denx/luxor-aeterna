@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "luxor-aeterna",
+	"id": "luxoraeterna",
 	"version": "${version}",
 	"name": "Luxor Aeterna",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -8,31 +8,30 @@
 		"Me!"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://m41den.com/",
+		"sources": "https://github.com/m41denx/luxor-aeterna"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/luxor-aeterna/icon.png",
+	"icon": "assets/luxoraeterna/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.m41den.aeterna.LuxorAeterna"
+		],
+		"fabric-datagen": [
+			"com.m41den.aeterna.LuxorAeternaDataGenerator"
 		],
 		"client": [
 			"com.m41den.aeterna.LuxorAeternaClient"
 		]
 	},
 	"mixins": [
-		"luxor-aeterna.mixins.json",
-		{
-			"config": "luxor-aeterna.client.mixins.json",
-			"environment": "client"
-		}
+		"luxoraeterna.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
-		"minecraft": "~1.20.4",
-		"java": ">=17",
+		"minecraft": "~1.21",
+		"java": ">=21",
 		"fabric-api": "*"
 	},
 	"suggests": {
